@@ -1,0 +1,23 @@
+#Diamond shape problem in multiple inherutance
+
+class A:
+    def met (self):
+        print("This a method from class A")
+
+class B(A):
+    def met (self):
+        print("This a method from class B")
+
+class C(A):
+    print("This is a method from class C")
+
+class D( B , C ):
+    def met (self):
+        print("This a method from class D")
+
+a = A()
+b = B()
+c = C()
+d = D()
+
+d.met()
